@@ -1,0 +1,24 @@
+{
+  "name": "js-eslint-demo",
+  "version": "1.0.0",
+  "description": "A tiny demo using ESLint",
+  "main": "index.js",
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/quangnd-pgvn/Javascript-eslint-demo"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all --parallel dev lint",
+    "dev": "nodemon index.js",
+    "lint": "esw --watch index.js"
+  },
+  "author": "quangnd",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-watch": "^3.1.3",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^4.1.1"
+  }
+}
